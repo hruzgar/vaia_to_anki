@@ -8,3 +8,5 @@ I basically adjusted the script from the reddit comment linked above so it doesn
 **So if you have cards with bullet points, lists etc this script is exactely for that.**
 
 Keep in mind to toggle "Allot HTML in fields" when you're importing the deck.
+
+Working perfectly as of `10. February 2025`
