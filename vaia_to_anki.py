@@ -13,7 +13,10 @@ flashcard_previews = soup.find_all('app-flashcard-preview')
  
 for flashcard in flashcard_previews:
     question = flashcard.find_all('div', class_='viewer')[0].get_text(strip=True).replace(";", " sk ").replace("\n", "")
-    answer = str(flashcard.find_all('div', class_='viewer')[1].find('div')).replace(";", " sk ").replace("\n", "")
+
+    answer_div = flashcard.find_all('div', class_='viewer')[1]
+    answer_div.attrs = {}
+    answer = str(answer_div).replace(";", "(semikolon here)").replace("\n", "")
 
     vocabulary_data.append((question, answer))
  
